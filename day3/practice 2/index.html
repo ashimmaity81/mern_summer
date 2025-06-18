@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 2 - App</title>
+    <style>
+        #root{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+            justify-content: space-evenly;
+        }
+        .card{
+            border: 1px solid lightgray;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            padding: 1.25rem;
+            max-width: 240px;
+        }
+        img{
+            height: 7rem;
+            width: 15rem;
+            border-radius: 10%;
+            padding-bottom: 1rem;
+        }
+        span{
+            display: inline;
+            /* flex-wrap: wrap; */
+            position: relative;
+            /* justify-content: space-evenly; */
+            font-weight: bold;
+            /* padding-bottom: 1rem; */
+        }
+        .a1{
+            float: left;
+            margin-left: 20px;
+        }
+        .a2{
+            float: right;
+            margin-right: 20px;
+        }
+        h4{
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 2px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="padding-left: 30px;">Recipe Store</h2>
+    </header>
+    <main id="root"></main>
+    <!-- <footer>
+        &copy; xyz@gmail.com
+    </footer> -->
+    <script src="./app.js"></script>
+</body>
+</html>
+
