@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice 2 - App</title>
-    <style>
+    <!-- <style>
         #root{
             display: flex;
             flex-wrap: wrap;
@@ -68,6 +68,44 @@
             border-radius: 1rem;
         }
 
+    </style> -->
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .card {
+            border: 1px solid lightgrey;
+            padding: 1rem;
+            cursor: pointer;
+            transition: background-color 500ms ease;
+        }
+
+        .card:hover {
+            background-color: antiquewhite;
+        }
+
+        #pop-up-view {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.6);
+            top: 0;
+            left: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #pop-up-container {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +127,9 @@
     </footer> -->
     <div id="pop-up-view" style="display: none;">
         <div id="pop-up-container">
-            <p>Hello</p>
+            <div id="pop-up-content">
+                <p>Hello</p>
+            </div>
             <button onclick="handleClosePopUp()">Close</button>
         </div>
     </div>
@@ -99,15 +139,3 @@
 
 
 
-<!-- <style>
-    main{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,320px);
-        justify-content: center;
-        gap: 1.5rem;
-    }
-    .card{
-        border: 1px solid lightgray;
-
-    }
-</style> -->

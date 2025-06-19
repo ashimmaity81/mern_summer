@@ -1069,27 +1069,28 @@ const data = {
 // };
 // createUI();
 
-// const parentElem = document.getElementsByTagName("main")[0];
-// const { recipes } = data;
-// recipes.forEach(({ name, image, cuisine, rating, servings }) => {
-//     const newDiv = document.createElement("div");
-//     newDiv.className = "card";
-//     newDiv.innerHTML = `
-//         <p>${name}</p>
-//         <img src='${image}abcd' width='200' height='200'>
-//         <p>${cuisine}</p>
-//         <p>${rating}</p>
-//         <p>${servings}</p>
-//     `;
+const parentElem = document.getElementsByTagName("main")[0];
+const { recipes } = data;
+recipes.forEach(({ name, image, cuisine, rating, servings }) => {
+  const newDiv = document.createElement("div");
+  newDiv.className = "card";
+  newDiv.innerHTML = `
+        <p>${name}</p>
+        <img src='${image}abcd' width='200' height='200'>
+        <p>${cuisine}</p>
+        <p>${rating}</p>
+        <p>${servings}</p>
+    `;
 
-//     parentElem.appendChild(newDiv);
-// });
+  parentElem.appendChild(newDiv);
+});
 
 const popUpView = document.getElementById("pop-up-view");
-
+const popupContent = document.getElementById("pop-up-content");
 const handleCardClick = () => {
   // alert("clicked");
   popUpView.style.display = "flex";
+  popupContent.innerHTML = `<p>Likhilesh</p>`;
 };
 
 const homeButton = document.getElementsByTagName("button")[0];
