@@ -15,11 +15,11 @@
 // elements[1].style.color = "brown";
 // elements[2].style.color = "brown";
 
-const text = document.getElementById("text-1");
-text.style.backgroundColor = "lime";
+// const text = document.getElementById("text-1");
+// text.style.backgroundColor = "lime";
 
-const textpara = document.querySelectorAll("#text-1");
-console.log("textPara:", textpara);
+// const textpara = document.querySelectorAll("#text-1");
+// console.log("textPara:", textpara);
 
-const textparas = document.querySelector(".text-brown");
-console.log("textParas:", textparas);
+// const textparas = document.querySelector(".text-brown");
+// console.log("textParas:", textparas);

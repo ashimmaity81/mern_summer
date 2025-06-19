@@ -16,7 +16,6 @@
 // delete cse018.address;
 // console.log("CSE018 : ",cse018);
 
-
 // const person = {
 //     name: 'Ashim',
 //     height: '1.76',
@@ -48,19 +47,17 @@
 // console.log("allEntries:",allEntries);
 
 const person = {
-    name: 'Ashim',
-    height: '1.76',
-    weight: '60',
-    college: 'LPU',
-    rollNumber: '81',
+  name: "Ashim",
+  height: "1.76",
+  weight: "60",
+  college: "LPU",
+  rollNumber: "81",
 };
 
 // const {weight,height} = person;
 // console.log(weight,height);
 
-const person2={...person};
-person2.name="John";
+const person2 = { ...person };
+person2.name = "John";
 console.log(person);
 console.log(person2);
-
-

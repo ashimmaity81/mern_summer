@@ -1058,13 +1058,45 @@ const data = {
   limit: 30,
 };
 
-const parent = document.getElementById("root");
-const createUI = () => {
-  data.recipes.forEach((elem) => {
-    const newDiv = document.createElement("div");
-    newDiv.className = "card";
-    newDiv.innerHTML = `<h4>${elem.name}</h4><img src=${elem.image}></img><span class="a1">⭐${elem.rating}</span><span class="a2">${elem.cuisine}</span><h5>${elem.mealType}</h5>`;
-    parent.append(newDiv);
-  });
+// const parent = document.getElementById("root");
+// const createUI = () => {
+//   data.recipes.forEach((elem) => {
+//     const newDiv = document.createElement("div");
+//     newDiv.className = "card";
+//     newDiv.innerHTML = `<h4>${elem.name}</h4><img src=${elem.image}></img><span class="a1">⭐${elem.rating}</span><span class="a2">${elem.cuisine}</span><h5>${elem.mealType}</h5>`;
+//     parent.append(newDiv);
+//   });
+// };
+// createUI();
+
+// const parentElem = document.getElementsByTagName("main")[0];
+// const { recipes } = data;
+// recipes.forEach(({ name, image, cuisine, rating, servings }) => {
+//     const newDiv = document.createElement("div");
+//     newDiv.className = "card";
+//     newDiv.innerHTML = `
+//         <p>${name}</p>
+//         <img src='${image}abcd' width='200' height='200'>
+//         <p>${cuisine}</p>
+//         <p>${rating}</p>
+//         <p>${servings}</p>
+//     `;
+
+//     parentElem.appendChild(newDiv);
+// });
+
+const popUpView = document.getElementById("pop-up-view");
+
+const handleCardClick = () => {
+  // alert("clicked");
+  popUpView.style.display = "flex";
 };
-createUI();
+
+const homeButton = document.getElementsByTagName("button")[0];
+homeButton.addEventListener("click", () => {
+  alert("Programmatically handled");
+});
+const handleClosePopUp = () => {
+  // alert("clicked");
+  popUpView.style.display = "none";
+};
