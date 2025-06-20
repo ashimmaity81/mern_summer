@@ -82,6 +82,10 @@
             padding: 1rem;
             cursor: pointer;
             transition: background-color 500ms ease;
+            text-align: center;
+        }
+        img{
+            border-radius: 10px;
         }
 
         .card:hover {
@@ -119,7 +123,7 @@
             <p>Dummy Cuisine</p>
             <p>Dummy Rating</p>
             <p>Dummy Servings</p>
-            <button onclick="handleCardClick()">Click Me</button>
+            <button onclick="handleCardClick({name:'pizza',cuisine:'italian',rating:4,servings:3,})"">Click Me</button>
         </div>
     </main>
     <!-- <footer>

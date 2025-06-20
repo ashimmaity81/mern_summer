@@ -17,9 +17,11 @@
     <h2>Form-handling</h2>
     <h2 id="greeting">Hello !</h2>
     <form action="./thankyou.html" onsubmit="handleFormSubmit(event)">
-        <input type="text" placeholder="Your username" name="usernameTemp" onkeyup="handleusername(event)"> 
-        <input type="email" placeholder="Your official email" name="baseemail"> 
-        <input type="password" placeholder="Strong password" name="demopassword"> 
+        <input type="text" placeholder="Your username" name="usernameTemp" onkeyup="handleusername(event)" required> 
+        <!-- <input type="text" placeholder="Your username" name="usernameTemp" onkeydown="handleusername(event)" required> 
+        <input type="text" placeholder="Your username" name="usernameTemp" onchange="handleusername(event)" required>  -->
+        <input type="email" placeholder="Your official email" name="baseemail" required> 
+        <input type="password" placeholder="Strong password" name="demopassword" required> 
         <button>Register</button>
     </form>
 
