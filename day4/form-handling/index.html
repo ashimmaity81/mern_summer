@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-handling</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form-handling</h2>
+    <h2 id="greeting">Hello !</h2>
+    <form action="./thankyou.html" onsubmit="handleFormSubmit(event)">
+        <input type="text" placeholder="Your username" name="usernameTemp" onkeyup="handleusername(event)"> 
+        <input type="email" placeholder="Your official email" name="baseemail"> 
+        <input type="password" placeholder="Strong password" name="demopassword"> 
+        <button>Register</button>
+    </form>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
