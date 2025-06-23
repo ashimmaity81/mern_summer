@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#cards-parent{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,320px);
+    gap: 1rem;
+}
+.trending-card {
+    background-color: antiquewhite;
+}
+
+.video-thumb-image {
+    width: 100%;
+}
