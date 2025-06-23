@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #display {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 18px;
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="display">00:00:00</div>
+
+  <button onclick="startStopwatch()">Start</button>
+  <button onclick="pauseStopwatch()">Pause</button>
+  <button onclick="resetStopwatch()">Reset</button>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
