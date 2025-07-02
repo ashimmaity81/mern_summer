@@ -1,34 +1,24 @@
+//function re-run ===> component re-rendering
+//react re-render's component EITHER on "state" OR "props" change
 import {useState} from "react";
+//hook --> function given to use by react
 const App = () => {
-  const [arr,setArr] = useState(["kiwi","banana"]);
-  console.log("new array ---> ",arr);
+  // let searchText = "Arun";
+  const [monitor,remote] = useState(0);
+  console.log(monitor);
 
-  const handleAddFruit = () => {
-    // arr.push("Mango");
-    // console.log("arr",arr);
-    // setArr(arr);
-
-    // const temp = [...arr];
-    // temp.push("Mango");
-    // console.log("arr",temp);
-    // setArr(temp);
-
-    setArr((prev)=> {
-      const temp = [...arr];
-      temp.push("Mango");
-      console.log("arr",temp);
-      return temp;
-    });
-  };
-
+  // const handleClick = (e) => {
+  //   remote(monitor+1);
+  //   remote(monitor+2);
+  //   remote(monitor+1);  // remote use the latest / last
+  //   console.log(monitor);
+  // }
   return (
     <div>
-    <ul>
-      {arr.map((elem) => {
-        return <li>{elem}</li>;
-      })}
-    </ul>
-    <button onClick={handleAddFruit}>Add Mango</button>
+      <h1>Click Here !</h1>
+      {/* <button onClick={handleClick}>Click Me</button> */}
+      <button onClick={()=>{remote(monitor+1)}}>Click Me</button>
+      <h1>{monitor}</h1>
     </div>
   );
 };
