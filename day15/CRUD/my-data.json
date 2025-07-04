@@ -1,32 +1,14 @@
 [
   {
-    "name": "Likhilesh",
-    "city": "Pune",
-    "score": 65,
-    "id": "21c4ac9f-fcaa-489c-aa06-ade9679d21ed"
-  },
-  {
-    "name": "Mohan",
-    "city": "Jaipur",
-    "score": 85,
-    "id": "59e764f5-3415-4fa2-92dd-aa36a607e8b3"
+    "name": "Anuj",
+    "city": "delhi",
+    "score": 50,
+    "id": "c9e4720d-f9a3-4a70-bfbe-49a68171f4ab"
   },
   {
     "name": "Anuj",
     "city": "Noida",
     "score": 50,
-    "id": "7835c51f-1f55-4f0e-a735-16241164ce6b"
-  },
-  {
-    "name": "Anuj",
-    "city": "Noida",
-    "score": 50,
-    "id": "f3b431cb-7805-43e9-b769-f465604e0ee7"
-  },
-  {
-    "name": "Anuj",
-    "city": "Noida",
-    "score": 50,
-    "id": "6cc1d0d5-6c95-4a3b-929d-e20fbba499ee"
+    "id": "32fe34af-20fa-4c63-b723-59043e5206a4"
   }
 ]
